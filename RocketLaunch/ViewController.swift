@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - @IBOutlets
+    
+    @IBOutlet weak var rocketView: UIView!
+    @IBOutlet weak var rocketImageView: UIImageView!
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    //MARK: - UIView lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    @IBAction func startButtonPressed() {
+        rocketView.isHidden = false
+    }
 }
 
